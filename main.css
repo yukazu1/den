@@ -12,4 +12,5 @@
 .rihobox { font-size: 70px;width:420px; color:white;text-align: right;background:black;border: none; }
 .rihobg { background:black; }
 .rihotext {color:white; }
+.riholink {coklor:skyblue; }
 .riholink:hover { color:#16d91c;; }
