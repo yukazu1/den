@@ -9,7 +9,7 @@
 .rihowhite { background:white; }
 .rihoorange { color:white;background:#ffa500; }
 .rihogray { color:white;background:gray;}  
-.rihobox { font-size: 70px;width:420px; color:white;text-align: right;background:black;border: none; }
+.rihobox { font-size: 70px;width:420px; color:white;text-align: right;background:black;border: none; outline: none;}
 .rihobg { background:black; }
 .rihotext {color:white; font-size:15px}
 a {font-size:15px; color:skyblue;}
