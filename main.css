@@ -9,8 +9,8 @@
 .rihowhite { background:white; }
 .rihoorange { color:white;background:#ffa500; }
 .rihogray { color:white;background:gray;}  
-.rihobox { font-size: 70px;width:420px; color:white;text-align: right;background:black;border: none; outline: none;}
+.rihobox { font-size: 70px;width:420px; color:white;text-align: right;background:black;border: none;}
 .rihobg { background:black; }
 .rihotext {color:white; font-size:20px}
 a {font-size:20px; color:skyblue;}
-.riholink:hover { color:#16d91c; }
+.riholink:hover { color:#16d91c; font-size:30px}
