@@ -32,7 +32,7 @@ document. querySelector( 'input' ). value += _v;
 
     function  calc() // 「＝」が押されたので計算する
     {
-      riri();
+      rihoreplace();
         document. querySelector( 'input' ).value = 'Math.round( (' + rihobox.value + ' )  * 1000) /1000'
       const v = document. querySelector( 'input' ).value
       try{
@@ -43,37 +43,40 @@ document. querySelector( 'input' ). value += _v;
              
     }
 
-function riri() //文字の置き換えをするっす。
+function rihobs()//一文字消す
 {
-var rihoch = rihobox.value;
-var result = rihoch.replace('×', '*');
+var rihobetext = rihobox.value;
+var rihoshort = rihobetext.slice( 0, -1 ) ;
+  document. querySelector( 'input' ).value = rihoshort;
+}
+
+function rihoreplace() //文字の置き換えをするっす。
+{
+var rihobe = rihobox.value;
+var rihoaf = rihobe.replace('×', '*');
   
+ while(rihoaf !== rihobe) {
  
-//「rihoch」と「result」が同じ文字列になるまで繰り返す
-while(result !== rihoch) {
- 
-    rihoch = rihoch.replace('×', '*');
-    result = result.replace('×', '*');
+    rihobe = rihobe.replace('×', '*');
+    rihoaf = rihoaf.replace('×', '*');
  
 }
 
-   var result = rihoch.replace('÷', '/');
-//「rihoch」と「result」が同じ文字列になるまで繰り返す
-while(result !== rihoch) {
+var rihoaf = rihobe.replace('÷', '/');
+while(rihoaf !== rihobe) {
  
-    rihoch = rihoch.replace('÷', '/');
-    result = result.replace('÷', '/');
+    rihobe = rihobe.replace('÷', '/');
+    rihoaf = rihoaf.replace('÷', '/');
  
 }  
-  var result = rihoch.replace('^', '**');
-//「rihoch」と「result」が同じ文字列になるまで繰り返す
-while(result !== rihoch) {
+  var rihoaf = rihobe.replace('^', '**');
+while(rihoaf !== rihobe) {
  
-    rihoch = rihoch.replace('^', '**');
-    result = result.replace('^', '**');
+    rihobe = rihobe.replace('^', '**');
+    rihoaf = rihoaf.replace('^', '**');
  
 }
-document. querySelector( 'input' ).value = result;
+document. querySelector( 'input' ).value = rihoaf;
 
 }
 
@@ -137,8 +140,10 @@ document.onkeydown = function(e) { //ショートカットキーだぜ　デュ�
         break;           
       case 67://クリア　Ｃ
         update( '' );    
+        break;           
+      case 8://バックスペース
+        rihobs( '' );    
         break;    
     }
 
 }
-
