@@ -1,8 +1,7 @@
   function update( _v ) // input tag　を更新する関数
     {
       document. querySelector( 'input' ).value = _v
-//             var elem = document.getElementById("rihotitle");
-// elem.innerHTML = "利歩のための電卓";
+
     }
     
     
