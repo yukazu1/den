@@ -24,7 +24,7 @@
     } 
        function mmm ( _v)//計算させるっす
     {
-       document. querySelector( 'input' ).value = 'Math.round(' + rihobox.value + '*10000 )/10000'
+       document. querySelector( 'input' ).value = 'Math.round( (' + rihobox.value + ' )  * 1000) /1000'
         const v = document. querySelector( 'input' ).value
       try{
         const f = new Function( 'return ' + v )
@@ -37,7 +37,8 @@
 
     function  calc() // 「＝」が押されたので計算する
     {
-        document. querySelector( 'input' ).value = 'Math.round(' + rihobox.value + '*10000 )/10000'
+        document. querySelector( 'input' ).value = 'Math.round( (' + rihobox.value + ' )  * 1000) /1000'
+
       const v = document. querySelector( 'input' ).value
       try{
         const f = new Function( 'return ' + v )
@@ -46,11 +47,5 @@
           
         
     }
-let rihobox = document.getElementById('rihobox');
 
-function riri()
-{
- 
-    document. querySelector( 'input' ).value = 'Math.round(' + rihobox.value + ')/100'
 
-}
