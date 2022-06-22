@@ -84,62 +84,61 @@ document.onkeydown = function(e) { //ショートカットキーだぜ　デュ�
       case 49://1
         append( '1' );
         break;
-      case 50://1
+      case 50://2
         append( '2' );
         break;
-      case 51://1
+      case 51://3
         append( '3' );
         break;
-      case 52://1
+      case 52://4
         append( '4' );
         break;
-      case 53://1
+      case 53://5
         append( '5' );       
         break;
-      case 54://1
+      case 54://6
         append( '6' );       
         break;
-      case 55://1
+      case 55://7
         append( '7' );       
         break;
-      case 56://1
+      case 56://8
         append( '8' );      
         break; 
-      case 57://1
+      case 57://9
         append( '9' );
         break;
-      case 48://1
+      case 48://0
         append( '0' );     
         break;  
-      case 190://1
+      case 190://.
         append( '.' );    
         break;    
-      case 80://1
-        append( '+' );    
+      case 80://足し算
+        mmm( '+' );    
         break;         
-      case 77://1
-        append( '-' );    
+      case 77://引き算
+        mmm( '-' );    
         break;      
-      case 84://1
-        append( '×' );    
+      case 84://掛け算
+        mmm( '×' );    
         break;      
-      case 68://1
-        append( '÷' );    
+      case 68://割り算
+        mmm( '÷' );    
         break;        
-      case 69://1
+      case 69://累乗
         append( '^' );    
         break;          
-      case 82://1
+      case 82://平方根
         sss( '**0.5' );    
         break;    
-      case 13://1
+      case 13://計算　Enter
         calc( '' );    
         break;           
-      case 67://1
+      case 67://クリア　Ｃ
         update( '' );    
         break;    
     }
 
 }
-
 
