@@ -1,45 +1,55 @@
-
-    function update( _v ) // input tag　を更新する関数
+  function update( _v ) // input tag　を更新する関数
     {
       document. querySelector( 'input' ).value = _v
+//             var elem = document.getElementById("rihotitle");
+// elem.innerHTML = "利歩のための電卓";
     }
     
     
     function append ( _v)//数字ボタンが押されたので数字を後ろに追加する
     {
       document. querySelector( 'input' ). value += _v
+      var elem = document.getElementById("rihotitle");
+elem.innerHTML = "" + rihobox.value +"  -利歩のための電卓";
     }
 
     
    function sss( _v)//ルートだから計算させるっす
     {
       document. querySelector( 'input' ). value += _v
+            var elem = document.getElementById("rihotitle");
+elem.innerHTML = "" + rihobox.value +"  -利歩のための電卓";
    const v = document. querySelector( 'input' ).value
       try{
         const f = new Function( 'return ' + v )
         update( f().toString() )
         } catch( _error ){}
-     
+
              
     } 
        function mmm ( _v)//計算させるっす
     {
+
 calc();
+                  var elem = document.getElementById("rihotitle");
+elem.innerHTML = "" + rihobox.value +"  -利歩のための電卓";
 document. querySelector( 'input' ). value += _v;
- 
+
     
     } 
 
     function  calc() // 「＝」が押されたので計算する
     {
-      rihoreplace();
-        document. querySelector( 'input' ).value = 'Math.round( (' + rihobox.value + ' )  * 1000) /1000'
+var elem = document.getElementById("rihotitle");
+elem.innerHTML = "" + rihobox.value +"  -利歩のための電卓";
+      riri();
+        document. querySelector( 'input' ).value = 'Math.round( (' + rihobox.value + ' )  * 100000000) /100000000'
       const v = document. querySelector( 'input' ).value
       try{
         const f = new Function( 'return ' + v )
         update( f().toString() )
         } catch( _error ){}
-     
+
              
     }
 
