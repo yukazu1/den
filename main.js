@@ -8,12 +8,16 @@
     function append ( _v)//数字ボタンが押されたので数字を後ろに追加する
     {
       document. querySelector( 'input' ). value += _v
+      var rihoti = document.getElementById("rihotitle");
+rihoti.textContent = rihobox.value +' - 利歩のための電卓'
     }
 
     
    function sss( _v)//ルートだから計算させるっす
     {
       document. querySelector( 'input' ). value += _v
+            var rihoti = document.getElementById("rihotitle");
+rihoti.textContent = rihobox.value +' - 利歩のための電卓'
    const v = document. querySelector( 'input' ).value
       try{
         const f = new Function( 'return ' + v )
@@ -26,6 +30,8 @@
     {
 calc();
 document. querySelector( 'input' ). value += _v;
+            var rihoti = document.getElementById("rihotitle");
+rihoti.textContent = rihobox.value +' - 利歩のための電卓'
  
     
     } 
