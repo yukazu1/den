@@ -6,9 +6,9 @@
        border: none;
        font-size:300%; 
 }
-.rihowhite { background:white; }
-.rihoorange { color:white;background:#ffa500; }
-.rihogray { color:white;background:gray;}  
+.rihowhite { background:	#A6A6A6; }
+.rihoorange { color:white;background:		#FE9600; }
+.rihogray { color:white;background:	#333333;}  
 .rihobox { font-size: 70px;width:420px; color:white;text-align: right;background:black;border: none;}
 .rihobg { background:black; }
 .rihotext {color:white; font-size:20px}
