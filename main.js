@@ -154,6 +154,11 @@ document.onkeydown = function(e) { //ショートカットキーだぜ　デュ�
 
 }
 window.onload = function() {
+window.setTimeout(dispMsg, 3000);
+
+function dispMsg(){
   const loader = document.getElementById('loading-wrapper');
   loader.classList.add('completed');
+
+}
 }
