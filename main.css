@@ -1,16 +1,52 @@
- button
-  {
-       width: 100px;
-       height: 100px; 
-       border-radius: 50%;
-       border: none;
-       font-size:300%; 
-}
-.rihowhite { background:	#A6A6A6; }
-.rihoorange { color:white;background:		#FE9600; }
-.rihogray { color:white;background:	#333333;}  
+/* パソコン版 */
+@media screen and (max-width:9000px) {
+button {width: 100px;height: 100px; border-radius: 50%;border: none;font-size:300%; }
+.rihowhite { background:white; }
+.rihoorange { color:white;background:#ffa500; }
+.rihogray { color:white;background:gray;}  
 .rihobox { font-size: 70px;width:420px; color:white;text-align: right;background:black;border: none;}
 .rihobg { background:black; }
 .rihotext {color:white; font-size:20px}
 a {font-size:20px; color:skyblue;}
 .riholink:hover { color:#16d91c; font-size:20.5px}
+}
+/* スマホ版 */
+ @media screen and (max-width: 480px)
+ {
+button {width: 80px;height: 80px; border-radius: 50%;border: none;font-size:240%; }
+.rihowhite { background:white; }
+.rihoorange { color:white;background:#ffa500; }
+.rihogray { color:white;background:gray;}  
+.rihobox { font-size: 70px;width:340px; color:white;text-align: right;background:black;border: none;}
+.rihobg { background:black; }
+.rihotext {color:white; font-size:20px}
+a {font-size:20px; color:skyblue;}
+.riholink:hover { color:#16d91c; font-size:20.5px}
+}
+/* ちっちゃいスマホ版 */
+ @media screen and (max-width: 320px)
+ {
+button {width: 63px;height: 63px; border-radius: 50%;border: none;font-size:189%; }
+.rihowhite { background:white; }
+.rihoorange { color:white;background:#ffa500; }
+.rihogray { color:white;background:gray}  
+.rihobox { font-size: 70px;width:420px; color:white;text-align: right;background:black;border: none;}
+.rihobg { background:black; }
+.rihotext {color:white; font-size:20px}
+a {font-size:20px; color:skyblue;}
+.riholink:hover { color:#16d91c; font-size:20.5px}
+}
+/* 縦が短い版 */
+ @media screen and (max-height: 683px)
+ {
+button {width: 63px;height: 63px; border-radius: 50%;border: none;font-size:189%; }
+.rihowhite { background:white; }
+.rihoorange { color:white;background:#ffa500; }
+.rihogray { color:white;background:gray}  
+.rihobox { font-size: 70px;width:272px; color:white;text-align: right;background:black;border: none;}
+.rihobg { background:black; }
+.rihotext {color:white; font-size:20px}
+a {font-size:20px; color:skyblue;}
+.riholink:hover { color:#16d91c; font-size:20.5px}
+}
+
